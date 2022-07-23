@@ -1,0 +1,39 @@
+[
+    {
+        "menuId": "/home",
+        "name": "首页",
+        "icon": "el-icon-s-home",
+        "url": "/home",
+        "keep": false
+    },
+    {
+        "menuId": "/components",
+        "name": "组件",
+        "icon": "el-icon-menu",
+        "children": [
+            {
+                "menuId": "/components/table",
+                "name": "表格自适应",
+                "url": "/components/table"
+            },
+            {
+                "menuId": "/components/dialog",
+                "name": "拖拽对话框",
+                "url": "/components/dialog"
+            }
+            
+        ]
+    },
+    {
+        "menuId": "/about",
+        "name": "关于",
+        "icon": "el-icon-s-custom",
+        "url": "/about"
+    },
+    {
+        "menuId": "/chart",
+        "name": "图表",
+        "icon": "el-icon-s-data",
+        "url": "/chart"
+    }
+]
