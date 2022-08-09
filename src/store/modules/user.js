@@ -2,8 +2,8 @@ export default {
     namespaced:true,
     state() {
         return {
-            // 用户信息
             profile: {
+                // 用作权限判断
                 userName:'',
                 token: ''
             }

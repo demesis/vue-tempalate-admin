@@ -48,11 +48,6 @@
         "icon": "el-icon-s-tools",
         "children": [
             {
-                "menuId": "/permission/page",
-                "name": "权限测试页",
-                "url": "/permission/page"
-            },
-            {
                 "menuId": "/permission/change",
                 "name": "改变权限",
                 "url": "/permission/change"

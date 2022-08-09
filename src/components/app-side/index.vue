@@ -30,8 +30,8 @@ export default {
     this.activeName =  this.$route.fullPath
     // 先引入默认路由表
     this.$store.state.menu.menus = menuList
-    getMenu().then(res => {
-      this.$store.state.menu.menus = res.data.data
+    getMenu({userName: this.$store.state.user.profile.userName}).then(res => {
+      this.$store.state.menu.menus = res.data
     })
   },
   methods: {

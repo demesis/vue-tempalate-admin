@@ -11,6 +11,9 @@ export default {
     return {
       
     }
+  },
+  created() {
+    this.$store.state.user.profile.userName = sessionStorage.getItem('userName')
   }
 }
 </script>

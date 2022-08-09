@@ -87,13 +87,13 @@ export default {
     login() {
         this.loading = true
         Login(this.loginForm).then(res => {
-            if(res.data.code == 200) {
+            if(res.code == 200) {
                 sessionStorage.setItem('userName', this.loginForm.userName) 
                 this.$store.state.user.profile.userName = this.loginForm.userName
                 this.$router.replace('/')
-                this.$message.success(res.data.message);
+                this.$message.success(res.message);
             } else{
-                this.$message.error(res.data.message);
+                this.$message.error(res.message);
             }
             this.loading = false
         })

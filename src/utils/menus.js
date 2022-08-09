@@ -26,6 +26,48 @@ const menuList = [
         ]
     },
     {
+        menuId: "/animation",
+        name: "动画",
+        icon: "el-icon-magic-stick",
+        url: "/animation"
+    },
+    {
+        menuId: "/error",
+        name: "错误页面",
+        icon: "el-icon-s-help",
+        children: [
+            {
+                menuId: "/error/401",
+                name: "401",
+                url: "/error/401"
+            },
+            {
+                menuId: "/error/404",
+                name: "404",
+                url: "/error/404"
+            }
+            
+        ]
+    },
+    {
+        menuId: "/permission",
+        name: "权限配置页",
+        icon: "el-icon-s-tools",
+        children: [
+            {
+                menuId: "/permission/page",
+                name: "权限测试页",
+                url: "/permission/page"
+            },
+            {
+                menuId: "/permission/change",
+                name: "改变权限",
+                url: "/permission/change"
+            }
+            
+        ]
+    },
+    {
         menuId: "/about",
         name: "关于",
         icon: "el-icon-s-custom",
